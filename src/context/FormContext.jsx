@@ -74,7 +74,6 @@ const FormProvider = ({ children }) => {
             },
             
             )
-            console.log(response.data)
             if(response.status=="201"){
                 toast.success("post successfull", {
                     position: toast.POSITION.TOP_RIGHT, // Change the position of the toast
@@ -138,7 +137,7 @@ const FormProvider = ({ children }) => {
             })
             if(isCurrent){
                 dispatch({type:ADD_FORMS,payload:response.data.form})
-                dispatch({type:"SET_LINK",payload:response.data.link})
+               
             }
 
             }
